@@ -137,7 +137,6 @@ const TranslationObject = ({
                         id={field}
                         formData={translationObject}
                         focus={false}
-                        value={translationObject[field]}
                         required={schema.required.indexOf(field) !== -1}
                         key={field}
                         onChange={() => {}}

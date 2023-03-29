@@ -86,7 +86,7 @@ class Form extends Component {
     description: PropTypes.string,
     visual: PropTypes.bool,
     blocks: PropTypes.arrayOf(PropTypes.object),
-    isFormSelected: PropTypes.bool,
+    iselected: PropTypes.bool,
     onSelectForm: PropTypes.func,
     editable: PropTypes.bool,
     onChangeFormData: PropTypes.func,
@@ -118,7 +118,7 @@ class Form extends Component {
     blocks: [],
     pathname: '',
     schema: {},
-    isFormSelected: true,
+    iselected: true,
     onSelectForm: null,
     editable: true,
     requestError: null,
@@ -307,7 +307,7 @@ class Form extends Component {
 
   static getDerivedStateFromProps(props, state) {
     let newState = { ...state };
-    if (!props.isFormSelected) {
+    if (!props.iselected) {
       newState.selected = null;
     }
 
@@ -470,7 +470,7 @@ class Form extends Component {
       // Changes the focus to the metadata tab in the sidebar if error
       this.props.setSidebarTab(0);
     } else {
-      // Get only the values that have been modified (Edit forms), send all in case that
+      // Get only the values that have been modified (Edit ), send all in case that
       // it's an add form
       if (this.props.isEditForm) {
         this.props.onSubmit(this.getOnlyFormModifiedValues());
@@ -488,7 +488,7 @@ class Form extends Component {
   /**
    * getOnlyFormModifiedValues handler
    * It returns only the values of the fields that are have really changed since the
-   * form was loaded. Useful for edit forms and PATCH operations, when we only want to
+   * form was loaded. Useful for edit  and PATCH operations, when we only want to
    * send the changed data.
    * @method getOnlyFormModifiedValues
    * @param {Object} event Event object.
