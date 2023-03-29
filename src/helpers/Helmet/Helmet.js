@@ -24,7 +24,7 @@ const Helmet = (Component) =>
      * @param {Array} meta: [{"name": "description", "content": "Test description"}]
      * @param {Array} noscript: [{"innerHTML": "<img src='http://mysite.com/js/test.js'"}]
      * @param {Function} onChangeClientState: "(newState) => console.log(newState)"
-     * @param {Array} script: [{"type": "text/javascript", "src": "http://mysite.com/js/test.js"}]
+     * @param {Array} script: [{"type": "text/JavaScript", "src": "http://mysite.com/js/test.js"}]
      * @param {Array} style: [{"type": "text/css", "cssText": "div { display: block; color: blue; }"}]
      * @param {String} title: "Title"
      * @param {Object} titleAttributes: {"itemprop": "name"}

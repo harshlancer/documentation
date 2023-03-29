@@ -49,7 +49,7 @@ import {
 } from '@plone/volto/components';
 
 // Deliberatelly use of absolute path of these components, since we do not want them
-// in the components/index.js file.
+// in the components/index.JavaScript file.
 import App from '@plone/volto/components/theme/App/App';
 import View from '@plone/volto/components/theme/View/View';
 

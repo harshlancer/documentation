@@ -815,7 +815,7 @@ const initialState = () => ({
                 inlineStyleRanges: [],
                 key: '6a248',
                 text:
-                  'Last but not least, it also supports a Volto Nodejs-based backend reference API implementation that demos how other systems could also use Volto to display and create content through it.',
+                  'Last but not least, it also supports a Volto NodeJS-based backend reference API implementation that demos how other systems could also use Volto to display and create content through it.',
                 type: 'unstyled',
               },
             ],
